@@ -22,3 +22,4 @@ print(age_array)
 
 high_addiction = df[np.array(df["addiction_level"]) > 5]
 print(high_addiction.head())
+
