@@ -1,30 +1,43 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
+#import pandas as pd
+#import numpy as np
+#import matplotlib.pyplot as plt
 
 # Load data
-df = pd.read_csv("data.csv")
+#df = pd.read_csv("data.csv")
 
 # Calculate total and average using NumPy
-df["total"] = np.sum(df[["math", "science", "english"]], axis=1)
-df["average"] = np.mean(df[["math", "science", "english"]], axis=1)
+#df["total"] = np.sum(df[["math", "science", "english"]], axis=1)
+#df["average"] = np.mean(df[["math", "science", "english"]], axis=1)
 
 # Find top student
-top_student = df.loc[df["total"].idxmax()]
+#top_student = df.loc[df["total"].idxmax()]
 
 # Subject-wise average
-subject_avg = df[["math", "science", "english"]].mean()
+#subject_avg = df[["math", "science", "english"]].mean()
 
 # Print results
-print("Top Student:")
-print(top_student[["name", "total"]])
+#print("Top Student:")
+#print(top_student[["name", "total"]])
 
-print("\nSubject Averages:")
-print(subject_avg)
+#print("\nSubject Averages:")
+#print(subject_avg)
 
 # Plot graph
-subject_avg.plot(kind="bar")
-plt.title("Average Marks per Subject")
-plt.xlabel("Subjects")
-plt.ylabel("Marks")
+##subject_avg.plot(kind="bar")
+#plt.title("Average Marks per Subject")
+#plt.xlabel("Subjects")
+    #plt.ylabel("Marks")
+    #plt.show()
+
+
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["A", "B", "C", "D"])
+y = np.array([3, 8, 1, 10])
+
+plt.bar(x, y, color = "red")
 plt.show()
